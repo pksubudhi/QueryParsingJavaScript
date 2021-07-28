@@ -1,0 +1,31 @@
+h1
+{
+    text-align: center;
+    font-family: cursive;
+    color: aquamarine;
+}
+.tbl_head
+{
+    background-color:darkmagenta;
+    color:cornsilk;
+    font-family: sans-serif;
+    
+}
+.tbl_head th
+{
+    width: 90px;
+    height: 30px;
+    text-align: center;
+        
+}
+table
+{
+    background-color: whitesmoke;
+    color: darkviolet;
+    border: 1px solid azure;
+
+}
+.tbl td:hover
+{
+    background-color: floralwhite;
+}
