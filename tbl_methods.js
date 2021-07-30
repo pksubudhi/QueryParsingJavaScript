@@ -2,6 +2,7 @@ function getRowTotal(tbl_name, fld_lst, tar_fld)
 {
     var fld_index=[];
     var tar_index=-1;
+    
     var fld_str=tokenize(fld_lst);
     
     var qexp="."+tbl_name+" tr";
@@ -82,7 +83,9 @@ function getAmt(tbl_name, src_fld, pr, tar_fld)
     
     var price=parseFloat(document.getElementById(pr).value).toFixed(2);
     var x=document.querySelectorAll("."+tbl_name+" tr");
+    
     var y=x[0].getElementsByTagName("th");
+    
     for(var i=0;i<y.length;i++)
     {
         if(y[i].innerHTML==src_fld)

@@ -5,6 +5,11 @@
         <link type="text/css" href="style.css" rel="stylesheet"/>
         
         <script src="tbl_methods.js" type="text/javascript"></script>
+        
+        
+        
+        
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
         
     </head>
@@ -50,8 +55,24 @@
         </table>
     </body>
     <hr/>
-    Product 1 Price    <input type="=text" id="pri1"/><button onclick="getAmt('tbl', 'Prod1', 'pri1', 'Max Prod')">Calc</button><br/>
+    Product 1 Price    <input type="=text" id="pri1"/><button onclick="getAmt('tbl', 'Prod1', 'pri1', 'Prod1 Amt')">Calc</button><br/>
+    
+    <table class="ali">
+        <tr class="tbl_head"><th>Code</th><th>Name</th><th>Basic</th><th>Hours</th><th>Pay</th><th>Allowance</th><th>Total</th></tr>
+        <tr><td>101</td><td>Ali</td><td>0</td><td>40</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>102</td><td>Raja</td><td>0</td><td>36</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>103</td><td>Rose</td><td>0</td><td>28</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>104</td><td>Maria</td><td>0</td><td>42</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td colspan="2">Total</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    </table>
+    Hourly pay<input type="text" id="hourly"/>
+    <button onclick="getAmt('ali', 'Hours', 'hourly', 'Pay')">Calculate Pay</button><br/>
+    
+    
+    
+    
     Product 2 Price    <input type="=text" id="pri2"/><button onclick="getAmt('tbl', 'Prod2', 'pri2', 'Prod2 Amt')">Calc</button><br/>
+    
     Product 3 Price    <input type="=text" id="pri3"/><button onclick="getAmt('tbl', 'Prod3', 'pri3', 'Prod3 Amt')">Calc</button><br/><br/>
     <button onclick="getRowTotal('tbl', 'Prod1, Prod2, Prod3', 'Total')">Get Row Total</button>
     <button onclick="getRowTotal('tbl', 'Prod1 Amt, Prod2 Amt, Prod3 Amt', 'Total Amt')">Get Row Total Amt</button>
