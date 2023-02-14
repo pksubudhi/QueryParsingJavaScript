@@ -1,3 +1,8 @@
+/*
+mailtopksubudhi@gmail.com
+www.pksubudhi.com
+*/
+
 function getRowTotal(tbl_name, fld_lst, tar_fld)
 {
     var fld_index=[];
